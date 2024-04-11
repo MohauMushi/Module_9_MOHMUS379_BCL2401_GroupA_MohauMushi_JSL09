@@ -10,6 +10,14 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
         document.getElementById("author").textContent = `By: John Johnson`;
     });
 
+
+    async function fetchRandomQuote() {
+        const response = await fetch('https://api.quotable.io/random');
+        const data = await response.json();
+        document.getElementById("quotes-author").textContent = `"${data.content}"`;
+    }
+    fetchRandomQuote();
+
 /*
     Pulling down the cryptocurrency data for dogecoin from the 
     CoinGecko API and log it to the console 
