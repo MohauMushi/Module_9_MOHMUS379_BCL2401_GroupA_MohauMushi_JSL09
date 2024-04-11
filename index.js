@@ -41,3 +41,10 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
         `
     })
     .catch(error => console.log(error))
+
+    // Get Current time function and display it in the 
+    getCurrentTime = () => {
+        const date = new Date();
+        document.getElementById("time").textContent = date.toLocaleTimeString("en-us", {timeStyle: "short"});
+    }
+    setInterval(getCurrentTime,1000);
