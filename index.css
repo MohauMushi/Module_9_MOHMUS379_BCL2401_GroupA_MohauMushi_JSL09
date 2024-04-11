@@ -32,3 +32,20 @@ h1.time {
     margin-top: -15px;
     font-size: 100px;
 }
+/*  */
+div#crypto{
+    font-size: 1.3rem;
+}
+
+div#crypto > p{
+    margin: 2px;
+}
+
+div#crypto-top{
+    display: flex;
+    align-items: center;
+}
+
+div#crypto-top > span{
+    margin-left: 10px;
+}
