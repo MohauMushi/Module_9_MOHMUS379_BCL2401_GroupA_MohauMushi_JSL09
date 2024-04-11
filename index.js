@@ -48,3 +48,23 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
         document.getElementById("time").textContent = date.toLocaleTimeString("en-us", {timeStyle: "short"});
     }
     setInterval(getCurrentTime,1000);
+
+    // Weather
+    navigator.geolocation.getCurrentPosition(position => {
+    fetch(`https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric`)
+        .then(response => {
+            if(!response.ok){
+                throw Error("Weather data not available")
+            }
+            return response.json()
+        })
+        .then(data => {
+        const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+        document.getElementById("weather").innerHTML = `
+        <img class="weather-img" src=${iconUrl} />
+        <p class="weather-temp">${Math.round(data.main.temp)}&#176c</p>
+        <p class="weather-city">${data.name}</p>
+        `
+        })
+        .catch(error => console.error(error))
+    })
