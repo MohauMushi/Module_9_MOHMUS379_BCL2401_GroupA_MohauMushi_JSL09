@@ -31,7 +31,7 @@ Any errors that occur during the process are caught and logged to the console.
 */
 
 try {
-    const response = await fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
+    const response = await fetch("https://api.coingecko.com/api/v3/coins/ethereum")
     if(!response.ok){
         throw Error("Something went wrong")
         }
