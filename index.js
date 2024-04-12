@@ -1,6 +1,7 @@
 fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature")
     .then(response => response.json())
     .then(data => {
+        
         console.log(data.urls.regular)
         document.body.style.backgroundImage = `url(${data.urls.regular})`
 		document.getElementById("author").textContent = `By: ${data.user.name}`
@@ -17,9 +18,9 @@ the text content of the HTML element with the id 'quotes-author' is set to the q
 function is called to fetch and display a random quote
 */
 async function fetchRandomQuote() {
-    const response = await fetch('https://api.quotable.io/random');
+    const response = await fetch('https://stoic.tekloon.net/stoic-quote');
     const data = await response.json();
-    document.getElementById("quotes-author").textContent = `"${data.content}"`;
+    document.getElementById("quotes-author").textContent = `"${data.quote}" by ${data.author}`;
     }
     fetchRandomQuote();
 
@@ -49,9 +50,9 @@ fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
         <span> ${data.name}</span>
     ` 
     document.getElementById("crypto").innerHTML += `
-        <p> 🎯: R ${data.market_data.current_price.zar}</P>
-        <p> ☝️: R ${data.market_data.high_24h.zar}</P>
-        <p> 👇: R ${data.market_data.low_24h.zar}</P>
+        <p> 🎯  R ${data.market_data.current_price.zar}</P>
+        <p> 📈  R ${data.market_data.high_24h.zar}</P>
+        <p> 📉  R ${data.market_data.low_24h.zar}</P>
     `
 })
 .catch(error => console.log(error))
