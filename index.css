@@ -61,8 +61,7 @@ div#crypto-top > span{
 }
 
 .weather-img{
-    width: 80px;
-    /* border: 3px solid black; */
+    width: 100px;
 }
 p.weather-city{
     width: 50%;
@@ -71,19 +70,22 @@ p.weather-city{
     margin: 0;
     font-weight: bold;
     margin-top: -10px;
-    /* border: 3px solid black; */
 }
 p.weather-temp{
     margin: 0;
     font-size: 2rem;
     font-weight: bold;
     margin-left: -10px;
-    /* border: 3px solid black; */
 }
 .quote{
     display: flex;
 }
-#quotes-author{
-    margin-left: 28rem;
-    border: 3px solid black;
+.quotes-div-box{
+    width: 400px;
+    margin-left: 27rem;
+    bottom: 1rem;
+    position: relative;
+}
+#quotes-author{ 
+    font-style: italic;
 }
