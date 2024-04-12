@@ -1,42 +1,26 @@
-# [JSL09] Submission: Personal Dashboard Chrome Extension
+# [JSL09]: Personal Dashboard
 
-You will:
-1. Use the provided Starter Code Repository: https://github.com/CodeSpace-Academy/Module_09_StudentNo_Classcode_Group_Name-Surname_JSL09
-2. Code your solution.
-3. Commit changes to your GitHub repository.
-4. Submit the GitHub Repository Link to the LMS [JSL09] Submission Project Tab.
-
-In this project you will follow along with the Scrimba Promise Rejection capstone to create a Personal Dashboard for your Chrome Browser. Note you are only required to submit the project code. You DO NOT need to submit the deployed Chrome extension. 
-
-Scrimba Reference Link: https://scrimba.com/learn/frontend/promise-rejection-coc4a4e4d8d208ab33b190dd5
+## 📄 Project Overview
+The personal dashboard project aimed to create a single web page that displays useful information to users throughout the day. It pulls in live data like the time, weather, cryptocurrency prices, and inspirational quotes to provide an at-a-glance overview. 
 
 ![](<[JSL09 Solution].png>)
-Note that this background image is dynamically generated so your's will look different.
 
-## What You Need to Do:
+## Development Objectives
+- **Integrate Multiple APIs:** The primary objective is to integrate various APIs to fetch real-time data for time, weather, cryptocurrency prices, and inspirational quotes.
+- **Asynchronous Data Retrieval:** Learning and implementing asynchronous data retrieval techniques to ensure that the dashboard displays the most up-to-date information without blocking the user interface.
+- **Dynamic Content Updating:** Developing the ability to dynamically update the content on the dashboard as new data is received from the APIs.
+- **Error Handling:** Implementing error handling mechanisms to gracefully handle situations where API calls fail or encounter errors, ensuring a smooth user experience.
+- **User-Friendly Display:** Ensuring that the dashboard provides a user-friendly and visually appealing display of the retrieved data, making it easy for users to access and understand the information.
 
-1. Clone the provided Starter Code Repository to your local development environment (e.g., VSCode): https://github.com/CodeSpace-Academy/Module_09_StudentNo_Classcode_Group_Name-Surname_JSL09
-2. Open the cloned project in your code editor.
-3. Code your solution for the challenge as per the provided instructions.
-4. If you have coded your Personal Dashboard challenge in Scrimba, you will need to download the zip folder of your project files. Unzip the project files into your JSL09 project repo on GitHub. Make sure to NOT use the Scrimba README. Instead you will keep your starter code README.
-5. Commit your changes to your local Git repository with meaningful commit messages.
-6. Push your local Git repository to your GitHub account.
-7. Verify that the changes have been successfully pushed to your GitHub repository.
+## Added Improvements
+**Inspirational Quotes:** Added a section dedicated to displaying inspirational quotes fetched from an API, providing users with motivational content.
 
-![alt text](download-scrimba-files.png)
-You can download your Scrimba files in the bottom right hand corner of the Scrimba IDE panel. 
+## 📚 What I Learned
+In the development this project, I learned how to integrate multiple APIs and asynchronously retrieve data from external sources. I used the Geolocation API to get location data, the OpenWeatherMap API for weather information, and other APIs for quotes, images, and cryptocurrency prices. I also learned how to dynamically update elements on the page as new data is received. 
 
-## What You Need to Include:
+Fetching data from APIs and handling asynchronous responses was a new skill for me. It required understanding promises and asynchronous JavaScript. I enjoyed learning how to chain promises together to make sequential API calls and process the returned data.
 
-1. Ensure that your code includes the necessary modifications to meet the challenge requirements.
-2. Your GitHub repository should contain the updated code files.
-
-## How We'll Assess Your Work:
-
-1. We will review your GitHub repository to ensure that it contains the updated code files.
-2. We will assess the modifications made to the code to verify that they effectively meet the challenge requirements.
-3. We will consider the commit history and meaningful commit messages to evaluate your coding process.
-
+Overall, this project gave me valuable experience in building a single-page application that pulls together different data sources. The skills around asynchronous programming, APIs, and dynamic content updating will be very useful for future projects.
 
 
 
