@@ -3,7 +3,8 @@
 ## 📄 Project Overview
 The personal dashboard project aimed to create a single web page that displays useful information to users throughout the day. It pulls in live data like the time, weather, cryptocurrency prices, and inspirational quotes to provide an at-a-glance overview. 
 
-![](<[JSL09 Solution].png>)
+![](<Dashboard.png>)
+
 
 ## Development Objectives
 - **Integrate Multiple APIs:** The primary objective is to integrate various APIs to fetch real-time data for time, weather, cryptocurrency prices, and inspirational quotes.
