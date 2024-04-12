@@ -1,3 +1,8 @@
+/*
+The code uses the fetch function to make an asynchronous request to the Unsplash API for a random landscape-oriented nature photo.
+It then updates the background image of the webpage with the retrieved photo using document.body.style.backgroundImage.
+Then it sets the text content of the element with the ID "author" to display the name of the author of the photo. 
+*/
 try{
     const response = await fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature")
     const data = await response.json()
